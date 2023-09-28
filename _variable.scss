@@ -1,0 +1,10 @@
+$priClr: #f4f4f4;
+$secClr: #3474e6;
+
+$headerClr: #0151cc;
+$bgClr: #a1c3ff;
+
+@mixin sizing{
+  font-size: clamp(1rem,2vw,1.8rem);
+  opacity: 80%;
+}

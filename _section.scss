@@ -1,0 +1,53 @@
+@import "variable";
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background: $headerClr;
+  padding: 2rem;
+  gap: 2rem;
+ border-bottom-left-radius: .5rem;
+ border-bottom-right-radius: .5rem;
+
+ &__container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ &__title{
+  font-size: clamp(2rem,5vw,5rem);
+  align-self: start;
+  margin-bottom: 2rem;
+ }
+ &__content{
+ @include sizing;
+ }
+  &__img{
+    width: 50%;
+  }
+}
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: min(90vw,130rem);
+  gap: 2rem;
+  padding: 2rem;
+  
+  .box{
+    background-color: $headerClr;
+    border-radius: 1rem;
+    padding: 3rem;
+    
+    &__title{
+      font-size: clamp(1.5rem,2vw,3rem);
+      margin-bottom: 1.5rem
+    }
+    &__content{
+      @include sizing;
+    }
+  }
+}

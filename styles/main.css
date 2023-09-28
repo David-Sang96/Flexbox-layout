@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #0151cc;
+  padding: 2rem;
+  gap: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.header__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-size: clamp(2rem, 5vw, 5rem);
+  align-self: start;
+  margin-bottom: 2rem;
+}
+.header__content {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  opacity: 80%;
+}
+.header__img {
+  width: 50%;
+}
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  width: min(90vw, 130rem);
+  gap: 2rem;
+  padding: 2rem;
+}
+.boxes .box {
+  background-color: #0151cc;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.boxes .box__title {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+.boxes .box__content {
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  opacity: 80%;
+}
+
+.navbar {
+  background: #3474e6;
+  padding-inline: 2rem;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__title {
+  font-size: 3rem;
+}
+.navbar__items {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.navbar__items li {
+  list-style: none;
+}
+.navbar__items a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #333;
+  background: #a1c3ff;
+  color: #f4f4f4;
+  width: min(95vw, 140rem);
+  margin-inline: auto;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__title {
+    align-self: center;
+  }
+  .header__content {
+    margin-bottom: 3rem;
+  }
+  .header__img {
+    width: 100%;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+}

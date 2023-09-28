@@ -1,0 +1,27 @@
+@import "variable";
+
+.navbar{
+  background: $secClr;
+  padding-inline: 2rem;
+  
+  &__container{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title{
+    font-size: 3rem;
+  }
+  &__items{
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    li{
+      list-style: none;
+    }
+    a{
+      font-size: 1.7rem;
+      text-decoration: none;
+      color: $priClr;
+    }
+  }
+}
